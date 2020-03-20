@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from 'react'
+import {ThemeProvider} from '@material-ui/core'
+import TaskBoard from './Component/TaskBoard'
+import theme from './Common/Theme'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+ class App extends Component {
+     
+    render() {
+      
+        return (
+            <ThemeProvider theme={theme}>
+                <TaskBoard/>
+                <ToastContainer/>
+            </ThemeProvider>
+            // <div>
+            //     <Button variant="contained" color="primary">
+            //             Hello World
+            //     </Button>
+            //     <div>
+            //         <div className = {classes.cochu}>JS</div>
+            //         <div className ={classes.fontchu}>java</div>
+            //         <div>csS</div>
+            //     </div>
+            // </div>
+        )
+    }
 }
-
-export default App;
+export default App

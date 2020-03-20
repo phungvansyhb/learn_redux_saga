@@ -1,0 +1,53 @@
+{
+    "task": [
+        {
+            "id": 1,
+            "title":"hoc react js",
+            "description":"nang cao ky nang",
+            "status": 1
+        },
+        {
+            "id": 2,
+            "title":"hoc js",
+            "description":"nang cao ky nang",
+            "status": 2
+        },
+        {
+            "id": 3,
+            "title":"hoc css",
+            "description":"nang cao ky nang",
+            "status": 2
+        },
+        {
+            "id":4,
+            "title":"hoc java",
+            "description":"nang cao ky nang",
+            "status": 0
+        },
+        {
+            "id": 5,
+            "title":"hoc nodejs",
+            "description":"nang cao ky nang",
+            "status": 2
+        }
+       
+    ],
+    "status":[
+        {
+            "index" : 1,
+            "label" : "READY",
+            "status":0
+        },
+        {
+            "index": 2,
+            "label" :"PROGRESSCING",
+            "status":1
+        },
+        {
+            "index" : 3,
+            "label" : "COMPLETE",
+            "status":2
+        }
+    ]
+
+}
