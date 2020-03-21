@@ -24,7 +24,7 @@ class TaskBoard extends Component {
 
     }
     
-    componentDidMount = () => {
+    Loadata = () => {
         this.props.fetchDataTask()
     }
     renderboard = (status) => {
@@ -54,8 +54,8 @@ class TaskBoard extends Component {
                 <Button variant="contained" color="primary" onClick={() => this.handleClickOpen()}>
                     <Icon>add_circle</Icon>  Them moi cong viec
                 </Button>
-                <Button variant="contained" color="primary" onClick={() => msg.msgsuccess("thanh cong")}>
-                    <Icon>add_circle</Icon>  toast
+                <Button variant="contained" color="primary" onClick={() => this.Loadata()}>
+                    <Icon>add_circle</Icon>  Load data
                 </Button>
 
                 <Grid container spacing={3}>

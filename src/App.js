@@ -4,6 +4,7 @@ import TaskBoard from './Component/TaskBoard'
 import theme from './Common/Theme'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Loading from './Component/Loading';
  class App extends Component {
      
     render() {
@@ -12,6 +13,7 @@ import 'react-toastify/dist/ReactToastify.css';
             <ThemeProvider theme={theme}>
                 <TaskBoard/>
                 <ToastContainer/>
+                <Loading/>
             </ThemeProvider>
             // <div>
             //     <Button variant="contained" color="primary">
